@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Simple Canvas Game</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            border:0;
+        }
+        #mybody {
+            width:1800px;
+            background: #ffffff;
+            color: #cc2732;
+            border:0;
+        }
+        #palette{
+
+
+        }
+        #whole{
+            margin: 0 auto;
+            background-color: #00B7FF;
+            width:900px;
+            border:0;
+        }
+
+        #first {
+            opacity: 100;
+
+            margin:24px 0 0 20px;
+            padding-top:1px;
+            height:28px;
+            font-family:Helvetica, Arial, sans-serif;
+            font-size:50px;
+            font-weight:lighter;
+            color:#FFFEFB;
+            text-align: center;
+
+        }
+        #play{
+            display:block;
+            width:200px;
+            height:100px;
+            line-height: 40px;
+            text-align:center;
+            font-size:50px;
+            background: #5f6dff;
+            color:#fff;
+
+
+        }
+        #smove_text{
+            margin:0 auto;
+            padding-top:100px;
+            height:28px;
+            font-family:Helvetica, Arial, sans-serif;
+            width:56px;
+            height:32px;
+            margin-top:22px;
+            margin-left: 300px;
+            text-align:center;
+            font-size:100px;
+            color: #fffaf0;
+
+        }
+        #over_text{
+            display: none;
+            margin:0 auto;
+            padding-top:300px;
+            height:28px;
+            font-family:Helvetica, Arial, sans-serif;
+            width:56px;
+            height:32px;
+            margin-top:300px;
+            margin-left: 300px;
+            text-align:center;
+            font-size:100px;
+            color: #fffaf0;
+
+        }
+        #btn span {
+             width:200px;
+             height: 50px;
+             display: inline-block;
+             padding: 10px  20px;
+             font-family: "cooper-black-std-1", "cooper-black-std-2";
+             text-shadow: 0 -1px 1px rgba(255, 250, 240, 0.8);
+             background: #3194c6;
+             background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3194c6), to(#5bacd6));
+             background: -moz-linear-gradient(#3194c6, #5bacd6);
+             -webkit-border-radius: 8px;
+             -moz-border-radius: 8px;
+             border-radius: 8px;
+             position: absolute;
+             left: 800px;
+             top: 500px;
+             font-size: 50px;
+             color:#ffffff;
+
+         }
+        #btn1 span {
+            display: block;
+            width:200px;
+            height: 50px;
+            padding: 10px  20px;
+            font-family: "cooper-black-std-1", "cooper-black-std-2";
+            text-shadow: 0 -1px 1px rgba(255, 250, 240, 0.8);
+            background: #3194c6;
+            background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3194c6), to(#5bacd6));
+            background: -moz-linear-gradient(#3194c6, #5bacd6);
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            border-radius: 8px;
+            position: absolute;
+            left: 800px;
+            top: 200px;
+            font-size: 50px;
+            color:#ffffff;
+
+        }
+    </style>
+    <script src = "http://code.jquery.com/jquery-1.9.1.min.js"></script>
+</head>
+<body id = "mybody" onkeydown="moveBall(event)" onload = "update(event)">
+<div id = "whole">
+    <div id="smove_text">Smove<p class="english"></p></div>
+    <button id = "btn" onclick="play()"><span>start</span></button>
+<canvas id = "palette" width="900" height="900" style = "border:0"></canvas>
+    <canvas id = "palettefirst" width="0" height="0" style = "border:0"></canvas>
+</div>
+<script src="game.js"></script>
+
+
+</body>
+</html>
+<script>
+
+</script>
